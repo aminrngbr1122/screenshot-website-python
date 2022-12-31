@@ -12,6 +12,11 @@ https://github.com/aminrngbr1122
 
 try:
 
+  import subprocess as sub
+
+  sub.getoutput('-m pip install selenium')
+  sub.getoutput('-m pip install art')
+
   from selenium import webdriver
   import time
   from selenium.webdriver.common.by import By
@@ -35,5 +40,5 @@ try:
 
 except:
   print(title)
-  print('\n oo no pls install lib selenium and art ! \n pip install selenium \n pip install art \n pip install time')
+  print('\n Error ): \n')
   
